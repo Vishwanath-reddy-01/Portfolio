@@ -1,0 +1,118 @@
+*, *:before, *:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f1e6ef
+}
+
+form {
+    height: 520px;
+    width: 430px;
+    background-color: rgba(255, 255, 255, 0.05);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px, solid, rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 40px 35px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+form *{
+    color: black;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+    
+}
+
+form h3{
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 35px;
+    text-align: center;
+    
+
+}
+
+form h3 span{
+    display: block;
+    font-size: 16px;
+    font-weight: 300px;
+}
+
+label{
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+input{
+    display: block;
+    height: 40px;
+    width: 100%;
+    background-color: rgb(231, 218, 229);
+    border: none;
+    border-radius: 4px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 15px;
+    font-weight: 300px;
+}
+
+textarea{
+    display: block;
+    height: 80px;
+    width: 100%;
+    background-color: rgb(231, 218, 229);
+    border: none;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 15px;
+    font-weight: 300px;
+    resize: none;
+}
+
+::placeholder{
+    color: #6a6767;
+}
+
+button{
+    margin-top: 30px;
+    width: 100%;
+    background-color: white;
+    color: black;
+    height: 45px;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 4px;
+
+}
+
+button:hover{
+    
+    color: black;
+    background:linear-gradient(to right,#f1e6ef, rgb(25, 208, 64), #f1e6ef);
+   
+}
+
+@media screen and (max-width: 720px) {
+    /*changes reflects on screen with a width of 720px and below*/
+      .contact-form-container {
+        max-width: 23.75rem;
+      }
+  }
+
+  @media screen and (max-width: 420px) {
+    
+    .contact-form-container {
+      max-width: 17.75rem;
+    }
+  } 
